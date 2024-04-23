@@ -15,7 +15,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -25,6 +24,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.material3.LocalContentColor
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun LoginScreen(){
@@ -73,29 +74,24 @@ fun LoginScreen(){
                 .padding(40.dp),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            Image(painter = painterResource(id = R.drawable.fb), contentDescription = "Login Image",
-                modifier = Modifier
-                    .size(60.dp)
-                    .clickable {
-                    }
-            )
-
-            Image(painter = painterResource(id = R.drawable.ig), contentDescription = "Login Image",
-                modifier = Modifier
-                    .size(60.dp)
-                    .clickable {
-                    }
-            )
-
             Image(painter = painterResource(id = R.drawable.github), contentDescription = "Login Image",
                 modifier = Modifier
                     .size(60.dp)
                     .clickable {
                     }
             )
+            Image(painter = painterResource(id = R.drawable.fb), contentDescription = "Login Image",
+                modifier = Modifier
+                    .size(60.dp)
+                    .clickable {
+                    }
+            )
+            Image(painter = painterResource(id = R.drawable.ig), contentDescription = "Login Image",
+                modifier = Modifier
+                    .size(60.dp)
+                    .clickable {
+                    }
+            )
         }
-
-
     }
-
 }
