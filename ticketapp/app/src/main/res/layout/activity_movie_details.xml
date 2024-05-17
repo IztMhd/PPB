@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/suzume" />
+
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suzume no Tojimari"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvMovieGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slice of Life, Komedi"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvMovieDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length: 1h 34min\nLanguage: Japanese\nReleased: 09 Oct 2023"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvSynopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Synopsis: Lorem ipsum dolor sit amet..."
+        android:layout_marginTop="16dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="4">
+
+        <!-- Add time slots here -->
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Seat"
+        android:layout_marginTop="16dp"
+        android:onClick="selectSeat" />
+
+</LinearLayout>
